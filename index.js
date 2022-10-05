@@ -12,7 +12,8 @@ btn.addEventListener("click", () => {
    listItem.addEventListener("click", () => {
       listItem.classList.add("listItemDone");
    })
+   
    listItem.addEventListener("dblclick", () => {
       toDo.removeChild(listItem);
    });
-})
+});
