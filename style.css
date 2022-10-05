@@ -1,0 +1,122 @@
+body {
+   background-image: url(images/bg-image.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 100vh;
+   background-position: center;
+   margin: 0;
+   font-family: "Anonymous Pro", monospace;
+   font-weight: 400;
+   font-size: 18px;
+}
+.header,
+.td-list,
+footer {
+   display: flex;
+   justify-content: center;
+}
+.header {
+   flex-direction: column;
+   align-items: center;
+   padding-top: 100px;
+   margin-bottom: 20px;
+}
+.icon {
+   width: 100px;
+   color: #73fbd3;
+}
+h1 {
+   font-size: 72px;
+   font-family: "Abril Fatface", cursive;
+   letter-spacing: 4px;
+   margin-bottom: 0;
+   background: linear-gradient(to left, #d6adfd, #8ec5fc);
+   text-transform: uppercase;
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+.inputField {
+   padding: 10px;
+   width: 660px;
+   border: 1px solid #dddddd;
+}
+.addBtn {
+   padding: 20px;
+   background: #f7ec59;
+   border: none;
+   cursor: pointer;
+}
+.toDoInput {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-left: 0;
+}
+.listItemAdded {
+   background: #4f517d;
+   color: #fff;
+   list-style-type: none;
+   height: 60px;
+   width: 740px;
+   text-align: center;
+   font-size: 20px;
+   margin-bottom: 5px;
+}
+.listItemDone {
+   background: #73fbd3;
+   color: #000;
+   font-weight: 700;
+   text-decoration: line-through;
+   transition: all 1s ease;
+}
+footer {
+   height: 45px;
+   background: #333558;
+   color: #fff;
+   padding: 8px;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   font-size: 16px;
+   text-align: center;
+}
+.webLink {
+   color: #fff;
+   text-decoration: none;
+}
+.authorLink {
+   color: #8ec5fc;
+   text-decoration: none;
+}
+.webLink:hover {
+   color: #fff;
+}
+.authorLink:hover {
+   color: #d6adfd;
+}
+@media all and (max-width: 800px) {
+   h1 {
+      font-size: 54px;
+   }
+   .inputField {
+      width: 360px;
+   }
+   .listItemAdded {
+      width: 440px;
+   }
+}
+@media all and (max-width: 500px) {
+   h1 {
+      font-size: 48px;
+   }
+   .inputField {
+      width: 260px;
+   }
+   .listItemAdded {
+      width: 340px;
+   }
+   footer {
+      height: 35px;
+      font-size: 12px;
+   }
+}
